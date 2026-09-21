@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import ProductCard from './components/ProductCard'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Link href="/users">User</Link> {/*client side navigation*/}
       {/*Not best way to put hyper link because rsrc downloaded again and again per page load*/}
       {/*<a href="/users">User</a>*/}
+      <ProductCard />
     </main>
   )
 }
