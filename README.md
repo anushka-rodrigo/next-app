@@ -164,13 +164,6 @@ Open <http://localhost:3000>. Edits hot-reload automatically.
 - **Tailwind CSS 4:** the entry point in `globals.css` is `@import "tailwindcss";`. The older v3 lines (`@tailwind base; @tailwind components; @tailwind utilities;`) are silently ignored by v4. Tailwind v4 also does not read `tailwind.config.ts` unless it is referenced with `@config`. No Tailwind classes are used in the UI yet, so the pages are intentionally unstyled at this stage.
 - **Linting:** Next.js 16 removed `next lint`. To lint, change the script to `"lint": "eslint"` and add an `eslint.config.mjs`.
 
-## Roadmap
-
-- [ ] Data fetching in `app/users/page.tsx` (server-side `fetch`)
-- [ ] Dynamic routes (`app/users/[id]/page.tsx`)
-- [ ] Caching, static vs dynamic rendering
-- [ ] Styling with CSS Modules, Tailwind CSS and DaisyUI
-
 ## Acknowledgements
 
 Built while following a Next.js 13 (App Router) with TypeScript beginner tutorial: <https://youtu.be/ZVnjOPwW4ZA>
